@@ -1,0 +1,46 @@
+node-public-encrypt (4.0.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper from old 12 to 13.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix filenamemangle
+  * Fix GitHub tags regex
+  * Closes: #995355:
+    + Use dh-sequence-nodejs auto test & install (allows stderr)
+    + New upstream version 4.0.3 (update Buffer() use to avoid warning)
+  * Drop unneeded dependency version constraints
+  * Drop nodejs dependency
+
+ -- Yadd <yadd@debian.org>  Wed, 27 Oct 2021 22:46:16 +0200
+
+node-public-encrypt (4.0.0-3) unstable; urgency=medium
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 10 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 01:25:50 +0100
+
+node-public-encrypt (4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Install missed files
+  * Bump compat and policy
+  * Modernize rules
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 20 Aug 2017 23:45:18 +0200
+
+node-public-encrypt (4.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #864874)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 16 Jun 2017 18:06:17 +0530

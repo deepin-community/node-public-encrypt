@@ -1,0 +1,39 @@
+Source: node-public-encrypt
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-bn.js <!nocheck>
+ , node-browserify-rsa <!nocheck>
+ , node-create-hash <!nocheck>
+ , node-parse-asn1 <!nocheck>
+ , node-randombytes <!nocheck>
+ , node-tape <!nocheck>
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-public-encrypt
+Vcs-Git: https://salsa.debian.org/js-team/node-public-encrypt.git
+Homepage: https://github.com/crypto-browserify/publicEncrypt
+Rules-Requires-Root: no
+
+Package: node-public-encrypt
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-bn.js
+ , node-browserify-rsa
+ , node-create-hash
+ , node-parse-asn1
+ , node-randombytes
+Description: browserify version of publicEncrypt & privateDecrypt
+ This library provides publicEncrypt/privateDecrypt functions for browserify.
+ .
+ This library is a dependency for webpack. Webpack takes code targeted at
+ node.js and makes it run in the browser. Node.js comes with API of its own
+ that is not available in the browsers. Webpack exposes this code
+ to programs that are unaware they are running in a browser.
+ .
+ Node.js is an event-based server-side JavaScript engine.
